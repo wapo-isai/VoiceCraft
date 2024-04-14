@@ -11,21 +11,29 @@
   <body>
     <h1 class="page-title">Text to Speech Converter</h1>
     <div class="input-area">
+      <!-- Our user input text will be here -->
       <input type="text" id="text-input" placeholder="Enter text here" />
+
+      <!-- submit button to send our text to our api gateway -->
       <button id="submit-btn">Submit</button>
     </div>
 
+    <!-- success message, only shown when successfully executed -->
     <div class="success-message msg-card">
       Text has been processed. Download your file to listen.
     </div>
 
+    <!-- error message only shown in case of an error -->
     <div class="error-message msg-card">Error</div>
 
+    <!-- this is where are audio files will be displayed -->
     <div id="files-wrapper">
       <div class="wrapper-header">
         <h2 class="file-list-header">Audio Files List</h2>
         <button id="refresh-button">Refresh List</button>
       </div>
+
+      <!-- this is where our javascript will insert the files to download -->
       <div id="file-list"></div>
     </div>
   </body>
