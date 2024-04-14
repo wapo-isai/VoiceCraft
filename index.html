@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Text to Speech</title>
+  </head>
+  <body>
+    <h1 class="page-title">Text to Speech Converter</h1>
+    <div class="input-area">
+      <input type="text" id="text-input" placeholder="Enter text here" />
+      <button id="submit-btn">Submit</button>
+    </div>
+
+    <div class="success-message msg-card">
+      Text has been processed. Download your file to listen.
+    </div>
+
+    <div class="error-message msg-card">Error</div>
+
+    <div id="files-wrapper">
+      <div class="wrapper-header">
+        <h2 class="file-list-header">Audio Files List</h2>
+        <button id="refresh-button">Refresh List</button>
+      </div>
+      <div id="file-list"></div>
+    </div>
+  </body>
+</html>
